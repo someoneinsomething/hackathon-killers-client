@@ -1,0 +1,9 @@
+{
+  "TOKEN": {
+    "YFI": "YFI"
+  },
+  "TOKEN_SELECT": {
+    "SELECT_LABEL": "Токен",
+    "SELECT_PLACEHOLDER": "Выберите токен"
+  }
+}

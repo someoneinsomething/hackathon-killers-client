@@ -1,16 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { List, ListItem, ListItemText, ListItemAvatar } from '../lists';
+import { List, ListItem, ListItemText } from '../lists';
 import { Skeleton } from './index';
 
-export const SkeletonDataItem = ({ image, divider = true, indent = true }) => (
+export const SkeletonDataItem = ({ divider = true, indent = true }) => (
   <ListItem divider={divider} indent={indent}>
-    {image && (
-      <ListItemAvatar>
-        <Skeleton variant="circle" width={50} height={50} />
-      </ListItemAvatar>
-    )}
     <ListItemText
       primary={
         <React.Fragment>
@@ -56,7 +51,6 @@ SkeletonDataList.propTypes = {
 };
 
 SkeletonDataItem.propTypes = {
-  image: PropTypes.bool,
   divider: PropTypes.bool,
   indent: PropTypes.bool,
 };

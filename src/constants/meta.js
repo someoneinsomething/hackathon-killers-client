@@ -1,1 +1,3 @@
-export const PAGE_TYPE = {};
+export const PAGE_TYPE = {
+  COURSE: 'COURSE',
+};

@@ -1,7 +1,12 @@
 {
   "DEFAULT": {
     "TITLE": "Hackathon Killers",
-    "DESCRIPTION": "Аналитика бирж",
+    "DESCRIPTION": "Hackathon Killers",
+    "KEYWORDS": ""
+  },
+  "COURSE": {
+    "TITLE": "Курс токенов",
+    "DESCRIPTION": "Курс токенов",
     "KEYWORDS": ""
   }
 }
