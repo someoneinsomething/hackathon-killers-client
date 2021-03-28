@@ -4,5 +4,6 @@ export { CourseTokenSelect } from './course-token-select';
 export { CourseTokenInfo } from './course-token-info';
 export { PaginationHandler } from './handler-pagination';
 export { DealList } from './deal-list';
+export { DealListFilter } from './deal-list-filter';
 export { SettingsInfo } from './settings-info';
 export { SettingsUpdateTradeBudget } from './settings-update-trade-budget';

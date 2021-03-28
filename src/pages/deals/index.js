@@ -3,7 +3,7 @@ import React from 'react';
 import Head from '../_head';
 import { PAGE_TYPE } from '../../constants/meta';
 import { PageLayout, ContentLayout, SectionLayout, ResponsiveLayout } from '../../components/layouts';
-import { DealList } from '../../containers';
+import { DealListFilter, DealList } from '../../containers';
 
 const DealListPage = () => {
   return (
@@ -12,6 +12,7 @@ const DealListPage = () => {
       <ContentLayout>
         <ResponsiveLayout size="default">
           <SectionLayout indent>
+            <DealListFilter />
             <DealList />
           </SectionLayout>
         </ResponsiveLayout>
