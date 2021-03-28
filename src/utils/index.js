@@ -26,3 +26,21 @@ export const debounce = (f, ms) => {
     }, ms);
   };
 };
+
+export const elementVisible = (target, cb) => {
+  if (!target) return null;
+
+  const targetPosition = {
+    top: window.pageYOffset + target.getBoundingClientRect().top,
+    bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+  };
+
+  const windowPosition = {
+    top: window.pageYOffset,
+    bottom: window.pageYOffset + document.documentElement.clientHeight,
+  };
+
+  if (targetPosition.bottom > windowPosition.top && targetPosition.top < windowPosition.bottom) {
+    cb();
+  }
+};

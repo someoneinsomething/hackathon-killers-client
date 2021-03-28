@@ -8,5 +8,14 @@
     "TITLE": "Курс токенов",
     "DESCRIPTION": "Курс токенов",
     "KEYWORDS": ""
+  },
+  "DEAL_LIST": {
+    "TITLE": "Список сделок",
+    "DESCRIPTION": "Список сделок",
+    "KEYWORDS": ""
+  },
+  "SETTINGS": {
+    "TITLE": "Настройки",
+    "DESCRIPTION": "Настройки"
   }
 }

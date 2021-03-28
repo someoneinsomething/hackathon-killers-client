@@ -1,0 +1,10 @@
+{
+  "UPDATE_TRADE_BUDGET": {
+    "TITLE": "Обновить бюджет сделки",
+    "FORM": {
+      "TRADE_BUDGET": "Бюджет",
+      "BUTTON_SUBMIT": "Обновить",
+      "ALERT_SUCCESS": "Бюджет сделки был успешно обновлен"
+    }
+  }
+}

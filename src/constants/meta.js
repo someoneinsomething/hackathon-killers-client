@@ -1,3 +1,5 @@
 export const PAGE_TYPE = {
   COURSE: 'COURSE',
+  DEAL_LIST: 'DEAL_LIST',
+  SETTINGS: 'SETTINGS',
 };
