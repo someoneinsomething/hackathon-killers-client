@@ -1,6 +1,8 @@
 export const APP_PAGE_ID = 'APP_ID';
 
-export const FORM_NAMES = {};
+export const FORM_NAMES = {
+  SETTINGS_UPDATE_TRADE_BUDGET: 'SETTINGS_UPDATE_TRADE_BUDGET_FORM',
+};
 
 export const OBSERVE_INTERVAL = {
   PAGINATION_REQUEST: 500,
