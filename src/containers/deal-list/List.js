@@ -121,7 +121,7 @@ export const DealList = ({ list, pagination, paginationAction, updating, data: {
                                   Сколько получим YFI: {token} - {newValueBid} = {calculatedAmountBid}
                                 </Paragraph>
                                 <Paragraph>
-                                  Финальная цена YFI в долларах при обмене: {calculatedAmountBid} *
+                                  Финальная цена YFI в долларах при обмене: {calculatedAmountBid} * {''}
                                   {tokenUsdtCourseDepthBid} * 0.998 = {binanceBid}
                                 </Paragraph>
                               </Block>
@@ -158,7 +158,7 @@ export const DealList = ({ list, pagination, paginationAction, updating, data: {
                                   Сколько получим ETH: {weth} - {newValueAsk} = {calculatedAmountAsk}
                                 </Paragraph>
                                 <Paragraph>
-                                  Финальная цена ETH в долларах при обмене: {calculatedAmountAsk} *
+                                  Финальная цена ETH в долларах при обмене: {calculatedAmountAsk} * {''}
                                   {ethUsdtCourse} * 0.998 = {binanceAsk}
                                 </Paragraph>
                               </Block>

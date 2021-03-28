@@ -1,7 +1,7 @@
 import { API } from '../constants/api';
 import { DEAL_LIST } from './index';
 import { httpRequest } from '../utils/request';
-import { performDealListData, performDealProfitListData } from '../api/deal';
+import { performDealListData } from '../api/deal';
 
 const setFail = (message) => ({
   type: DEAL_LIST.LOAD_FAIL,

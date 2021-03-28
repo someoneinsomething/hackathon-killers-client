@@ -20,8 +20,8 @@ const performDealListListData = performWithPagination((raw) =>
     newValueBid: item[DEAL_ITEM.NEW_VALUE_BID],
     calculatedAmountAsk: item[DEAL_ITEM.CALCULATED_AMOUNT_ASK],
     calculatedAmountBid: item[DEAL_ITEM.CALCULATED_AMOUNT_BID],
-    binanceAsk: item[DEAL_ITEM.CALCULATED_AMOUNT_ASK],
-    binanceBid: item[DEAL_ITEM.CALCULATED_AMOUNT_BID],
+    binanceAsk: item[DEAL_ITEM.BINANCE_ASK],
+    binanceBid: item[DEAL_ITEM.BINANCE_BID],
   })),
 );
 
