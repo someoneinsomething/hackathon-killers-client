@@ -19,7 +19,7 @@ const DealList = dynamic(() => import('./List').then((module) => module.DealList
 });
 
 export const DealListView = ({ loading, loaded, deals, paginationAction, updating, updateList }) => {
-  const isEmpty = loaded && deals.list.list.length === 0;
+  const isEmpty = loaded && deals.list.length === 0;
 
   return (
     <div>
@@ -32,12 +32,12 @@ export const DealListView = ({ loading, loaded, deals, paginationAction, updatin
         />
         {loading && <LoaderComponent />}
         {updating && <Loader />}
-        {loaded && deals.list.list.length !== 0 && (
+        {loaded && deals.list.length !== 0 && (
           <DealList
-            paginationAction={paginationAction}
-            pagination={deals.list.pagination}
+            // paginationAction={paginationAction}
+            // pagination={deals.list.pagination}
             updating={updating}
-            list={deals.list.list}
+            list={deals.list}
             data={deals.data}
           />
         )}

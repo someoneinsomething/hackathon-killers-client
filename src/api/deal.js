@@ -1,8 +1,8 @@
 import { DEAL, DEAL_ITEM } from '../constants/fields';
 import { getDateTime, performWithPagination } from '.';
 
-const performDealListListData = performWithPagination((raw) =>
-  raw.map((item) => ({
+const performDealListListData = (raw) =>
+  raw.list.map((item) => ({
     id: item[DEAL_ITEM.ID],
     createDate: getDateTime(item[DEAL_ITEM.CREATE_DATE]),
     token: item[DEAL_ITEM.TOKEN],
@@ -22,8 +22,7 @@ const performDealListListData = performWithPagination((raw) =>
     calculatedAmountBid: item[DEAL_ITEM.CALCULATED_AMOUNT_BID],
     binanceAsk: item[DEAL_ITEM.BINANCE_ASK],
     binanceBid: item[DEAL_ITEM.BINANCE_BID],
-  })),
-);
+  }));
 
 export const performDealListData = (raw) => ({
   data: {

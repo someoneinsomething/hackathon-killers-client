@@ -12,7 +12,7 @@ const DealListPage = () => {
       <ContentLayout>
         <ResponsiveLayout size="default">
           <SectionLayout indent>
-            <DealListFilter />
+            {/* <DealListFilter /> */}
             <DealList />
           </SectionLayout>
         </ResponsiveLayout>

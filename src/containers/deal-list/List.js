@@ -174,13 +174,13 @@ export const DealList = ({ list, pagination, paginationAction, updating, data: {
           },
         )}
       </List>
-      <PaginationHandler
+      {/* <PaginationHandler
         indent
         loading={updating}
         action={paginationAction}
         currentPage={pagination.currentPage}
         amountPages={pagination.amountPages}
-      />
+      /> */}
     </React.Fragment>
   );
 };

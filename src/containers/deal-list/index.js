@@ -9,7 +9,7 @@ import { getData, isRequestSuccess, isRequestPending, isUpdatePending } from '..
 import { DealListView } from './View';
 
 export const DealList = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
   const { isLoading, isLoaded, dealsData, isUpdating, pageLoading } = useSelector(
     ({ dealList: { data }, navigation }) => ({
       isLoading: isRequestPending(data),
@@ -24,6 +24,7 @@ export const DealList = () => {
   const updateList = () => {
     dispatch(
       updateDealList({
+        profit: true,
         skip: 0,
         take: PAGINATION_OFFSET.DEAL_LIST,
       }),
@@ -36,6 +37,7 @@ export const DealList = () => {
     if (isLoaded) {
       dispatch(
         updateDealList({
+          profit: true,
           skip: 0,
           take: PAGINATION_OFFSET.DEAL_LIST,
         }),
@@ -43,6 +45,7 @@ export const DealList = () => {
     } else {
       dispatch(
         getDealList({
+          profit: true,
           skip: 0,
           take: PAGINATION_OFFSET.DEAL_LIST,
         }),
@@ -50,16 +53,16 @@ export const DealList = () => {
     }
   }, []);
 
-  const paginationAction = () => {
-    const page = currentPage + 1;
-    dispatch(
-      updateDealList({
-        skip: 0,
-        take: PAGINATION_OFFSET.DEAL_LIST * page,
-      }),
-    );
-    setCurrentPage(page);
-  };
+  // const paginationAction = () => {
+  //   const page = currentPage + 1;
+  //   dispatch(
+  //     updateDealList({
+  //       skip: 0,
+  //       take: PAGINATION_OFFSET.DEAL_LIST * page,
+  //     }),
+  //   );
+  //   setCurrentPage(page);
+  // };
 
   const loading = (pageLoading && !isLoaded) || isLoading;
 
@@ -69,7 +72,7 @@ export const DealList = () => {
       loaded={isLoaded}
       updating={isUpdating}
       deals={dealsData}
-      paginationAction={paginationAction}
+      // paginationAction={paginationAction}
       updateList={updateList}
     />
   );
