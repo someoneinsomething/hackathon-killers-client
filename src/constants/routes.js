@@ -9,18 +9,18 @@ export const PAGINATION_OFFSET = {
 };
 
 export const APP_MENU = [
-  // {
-  //   id: 1,
-  //   tid: 'NAVIGATION.PATH.COURSE',
-  //   path: ROUTES.COURSE
-  // },
   {
     id: 1,
+    tid: 'NAVIGATION.PATH.COURSE',
+    path: ROUTES.COURSE,
+  },
+  {
+    id: 2,
     tid: 'NAVIGATION.PATH.DEALS',
     path: ROUTES.DEAL_LIST,
   },
   {
-    id: 2,
+    id: 3,
     tid: 'NAVIGATION.PATH.SETTINGS',
     path: ROUTES.SETTINGS,
   },

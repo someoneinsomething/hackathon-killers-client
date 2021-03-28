@@ -5,14 +5,19 @@ import { PAGE_TYPE } from '../../constants/meta';
 import { PageLayout, ContentLayout, SectionLayout, ResponsiveLayout } from '../../components/layouts';
 import { CourseTokenSelect, CourseTokenInfo } from '../../containers';
 
-const DealListPage = () => {
+
+
+
+
+const CourseListPage = (props) => {
+  console.log(props)
   return (
     <PageLayout>
       <Head id={PAGE_TYPE.COURSE} />
       <ContentLayout>
         <ResponsiveLayout size="default">
           <SectionLayout indent>
-            <CourseTokenSelect />
+            {/* <CourseTokenSelect /> */}
             <CourseTokenInfo />
           </SectionLayout>
         </ResponsiveLayout>
@@ -21,4 +26,5 @@ const DealListPage = () => {
   );
 };
 
-export default DealListPage;
+
+export default CourseListPage;
